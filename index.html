@@ -3,29 +3,26 @@
     <title>Page's title</title>
   </head>
   <body>
-    <table width="500" border="2">
-      <tr bgcolor=#999999> <!-- row -->
-        <td>Image</td> <!-- column -->
-        <td>Product</td> 
-        <td width="80">Quantity</td>
-        <td width="150">Unit Price</td> 
-      </tr>
-      <tr>
-        <td><img src="http://www.google.com.br/google.jpg" width="80"/></td>
-        <td>Paper</td>
-        <td>2</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td><img src="http://www.google.com.br/google.jpg" width="80"/></td>
-        <td>Pen</td>
-        <td>3</td>
-        <td>10</td>
-      </tr>
-      <tr bgcolor=#999999>
-        <td colspan="3" align="right">Total</td>
-        <td>70</td>
-      </tr>
-    </table>
+    <form method="POST">
+      User:<br/>
+      <input type="text" name="user"/><br/><br/>
+
+      Password:<br/>
+      <input type="password" name="pass"/><br/><br/>
+
+      <textarea name="open-text"></textarea><br/><br/>
+
+      <select name="options">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select><br/><br/>
+
+      <input type="radio" name="radio" value="1"/>Option 1<br/>
+      <input type="radio" name="radio" value="2"/>Option 2<br/>
+      <input type="radio" name="radio" value="3"/>Option 3<br/>
+
+      <input type="submit" value="Send"/>
+    </form>
   </body>
 </html>
