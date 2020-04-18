@@ -3,12 +3,29 @@
     <title>Page's title</title>
   </head>
   <body>
-    <a href="https://github.com/cadumancini/html-css">GitHub's repo</a>
-    <!--
-      <a href="file.pdf" download>Click to download</a>
-
-      The download param comes from HTML5, and indicates to the browser
-        that it has to download the file, not to open.
-    -->
+    <table width="500" border="2">
+      <tr bgcolor=#999999> <!-- row -->
+        <td>Image</td> <!-- column -->
+        <td>Product</td> 
+        <td width="80">Quantity</td>
+        <td width="150">Unit Price</td> 
+      </tr>
+      <tr>
+        <td><img src="http://www.google.com.br/google.jpg" width="80"/></td>
+        <td>Paper</td>
+        <td>2</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td><img src="http://www.google.com.br/google.jpg" width="80"/></td>
+        <td>Pen</td>
+        <td>3</td>
+        <td>10</td>
+      </tr>
+      <tr bgcolor=#999999>
+        <td colspan="3" align="right">Total</td>
+        <td>70</td>
+      </tr>
+    </table>
   </body>
 </html>
